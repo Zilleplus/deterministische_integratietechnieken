@@ -1,4 +1,4 @@
-function [ int_values ] = vraag2_func( func,N,Int )
+function [ int_values ] = vraag3_func( func,N,Int )
 
 rand_num=(rand(N,1)-0.5).*2;
 func_values=func(rand_num);
