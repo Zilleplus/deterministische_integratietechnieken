@@ -1,7 +1,4 @@
 function [ I ] = vraag2_clenshaw_curtis( f,n )
-%UNTITLED6 Summary of this function goes here
-%   Detailed explanation goes here
-
 x = cos(pi*(0:n)'/n);
 fx = feval(f,x)/(2*n);
 g = real(fft(fx([1:n+1 n:-1:2])));
