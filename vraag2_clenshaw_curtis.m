@@ -1,4 +1,4 @@
-function [ I ] = clenshaw_curtis( f,n )
+function [ I ] = vraag2_clenshaw_curtis( f,n )
 %UNTITLED6 Summary of this function goes here
 %   Detailed explanation goes here
 

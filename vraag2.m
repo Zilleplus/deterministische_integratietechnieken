@@ -18,8 +18,8 @@ iterCC = zeros(6,1);
 figure
 for i = 1:6
     for n = 1:30
-        errorG(i,n) = abs(gauss(f{i},n) - eval(i))/abs(eval(i));
-        errorCC(i,n) = abs(clenshaw_curtis(f{i},n) - eval(i))/abs(eval(i));
+        errorG(i,n) = abs(vraag2_gauss(f{i},n) - eval(i))/abs(eval(i));
+        errorCC(i,n) = abs(vraag2_clenshaw_curtis(f{i},n) - eval(i))/abs(eval(i));
         if (-log10(errorG(i,n)) >= 7 && iterG(i)==0)
             iterG(i) = n;
         end
