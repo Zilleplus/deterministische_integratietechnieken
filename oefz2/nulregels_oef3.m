@@ -23,6 +23,7 @@ semilogy(degrees,abs(N3));hold all;
 semilogy(degrees,abs(N4));
 legend('f3','f4');
 hold off
+saveas(fig,'./img/vraag3_all.png');
 %%
 N1 = zeros(15,1);
 N2 = N1;N3 = N1;N4 = N1;
@@ -45,3 +46,4 @@ semilogy(degrees,abs(N3));hold all;
 semilogy(degrees,abs(N4));
 legend('f3','f4');
 hold off
+saveas(fig,'./img/vraag3_oneven.png');

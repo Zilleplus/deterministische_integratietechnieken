@@ -26,10 +26,16 @@ r_f2=max(ri_f2);
 r_f3=max(ri_f3);
 r_f4=max(ri_f4);
 
-figure;
+disp(['f1: R=' num2str(r_f1)])
+disp(['f2: R=' num2str(r_f2)])
+disp(['f3: R=' num2str(r_f3)])
+disp(['f4: R=' num2str(r_f4)])
+
+fig=figure;
 x=1:length(ri_f1);
 plot(x,ri_f1);hold all;
 plot(x,ri_f2);
 plot(x,ri_f3);
 plot(x,ri_f4);hold off;
 legend('f1','f2','f3','f4');
+saveas(fig,'./img/vraag6_smallr.png');

@@ -1,0 +1,65 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage[parfill]{parskip}
+\usepackage{ amssymb }
+
+\graphicspath{ {./img/} }
+
+\title{Deterministische en stochastische integratie technieken}
+
+\author{Willem Melis}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed
+
+\begin{document}
+\maketitle
+\newpage
+%\tableofcontents
+\newpage
+\section{vraag1}
+\section{vraag2}
+\section{vraag3}
+
+Zoals aangegeven op bladzijde 240 van de paper uit de cursus zullen symetrische nul regels van een even graad nul zijn. Dit is het geval bij de even functies $f_1$,$f_3$ en $f_4$. Raar genoeg is dit niet zo bij $f_2$, $f_2$ is de enige functie die niet symmetrisch is. Zou dit de reden kunnen zijn?
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{vraag3_all.png}
+		\caption{alle nul regels, log schaal}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{vraag3_oneven}
+		\caption{oneven nul regels, log schaal}
+	\end{subfigure}
+\end{figure}
+
+\section{vraag4}
+De even nul regels worden uiteraard niet gebruikt aangezien deze nul zijn.
+\section{vraag5}
+\section{vraag6}
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{vraag6_smallr.png}
+		\caption{$r_i$}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{vraag6_R.png}
+		\caption{$R_i$}
+	\end{subfigure}
+\end{figure}
+
+			
+\end{document}
