@@ -1,8 +1,3 @@
-% !TEX TS-program = pdflatex
-% !TEX encoding = UTF-8 Unicode
-
-% This is a simple template for a LaTeX document using the "article" class.
-% See "book", "report", "letter" for other types of document.
 
 \documentclass[11pt]{article} % use larger type; default would be 10pt
 \usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
@@ -28,10 +23,27 @@
 %\tableofcontents
 \newpage
 \section{vraag1}
+Voor de samengestelde trapeziumregel weten we dat er een nauwkeurigheid moet zijn van $N^{-1}$, met $N$ het aantal punten. Aangezien we voor deze vraag $N=31$ gebruiken verwachten we een nauwkeurigheid van ten minste $31^{-1} = \frac{1}{31}=0.0323$. De resultaten staan in tabel \ref{table:oef1}. Hierop zien we dat de verwachte nauwkeurigheid inderdaad voldaan is.
+
+\begin{table}[H]
+	\centering
+	\caption{De fout gemaakt met de samengestelde trapeziumregel.}
+	\label{table:oef1}
+	\begin{tabular}{l|l}
+		& Error      \\ \hline
+		$x^{20}$              & 0.01445    \\
+		$\exp{(x)}$             & 0.00087045 \\
+		$\exp{(x^{-2})}$        & 0.00054509 \\
+		$\frac{1}{1+16x^{2}}$ & 8.1959e-05
+	\end{tabular}
+\end{table}
 \section{vraag2}
+De nulregels zijn geconstrueerd aan de hand van de momentvergelijking met behulp van de voorbeeld code die beschikbaar is op toledo. De code werd gebruikt voor het oplossen van de volgende vragen.
 \section{vraag3}
 
-Zoals aangegeven op bladzijde 240 van de paper uit de cursus zullen symetrische nul regels van een even graad nul zijn. Dit is het geval bij de even functies $f_1$,$f_3$ en $f_4$. Raar genoeg is dit niet zo bij $f_2$, $f_2$ is de enige functie die niet symmetrisch is. Zou dit de reden kunnen zijn?
+Zoals aangegeven op bladzijde 240 van de paper uit de cursus zullen symetrische nul regels van een even graad nul zijn. Dit is het geval bij de even functies $f_1$,$f_3$ en $f_4$. Raar genoeg is dit niet zo bij $f_2$, $f_2$ is de enige functie die niet symmetrisch is. Zou dit de reden kunnen zijn?\\ 
+
+ !!!Zie ik nu fout of is dat net omgekeerd? op die figuur lijkt het toch alsof alle oneven graden gelijk zijn aan 0 en de even net niet? of zie ik fout?!!!
 
 \begin{figure}[H]
 	\centering
@@ -46,20 +58,41 @@ Zoals aangegeven op bladzijde 240 van de paper uit de cursus zullen symetrische 
 \end{figure}
 
 \section{vraag4}
-De even nul regels worden uiteraard niet gebruikt aangezien deze nul zijn.
+We berekenen $r_{j} = \frac{e_{j}}{e_{j+1}}$ en $r = max_{j} r_{j}$.
+De even nul regels worden uitgesloten aangezien deze nul zijn. De $r_{j}$ waarden zijn weergegeven in figuur \ref{fig:oef6a}.
 \section{vraag5}
+Om het fase-effect te vermijden stelt men voor om over te schakelen op $E_{j} = \sqrt{e_{2j-1}^{2}+e_{2j}^{2}}$. We berekenen deze $E_{j}$’s en de reductiefactoren $R_{j} = \frac{E_{j}}{E_{j+1}}$ en $R = max_{j} R_{j}$ , wederom voor zinvolle waarden van $R_{j}$. Deze $R_{j}$ waarden zijn weergegeven in figuur \ref{fig:oef6b}.
 \section{vraag6}
+!!! Nog oplossen !!!
+
+
+Kan je het fase-effect zien bij de $r_{j}$’s? Is dit
+opgelost bij de $R_{j}$’s? Leg het verband tussen de reductiefactoren en de manier waarop de nulregels zich gedragen.
+
 \begin{figure}[H]
 	\centering
 	\begin{subfigure}[b]{0.45\textwidth}
 		\includegraphics[width=\textwidth]{vraag6_smallr.png}
-		\caption{$r_i$}
+		\caption{$r_j$}
+		\label{fig:oef6a}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.45\textwidth}
 		\includegraphics[width=\textwidth]{vraag6_R.png}
-		\caption{$R_i$}
+		\caption{$R_j$}
+		\label{fig:oef6b}
 	\end{subfigure}
 \end{figure}
 
-			
+\section{vraag7}
+!!! Nog oplossen !!!
+
+
+Puur op basis van de waarde van R: bij welke functies zie je sterke convergentie, zwakke convergentie of helemaal geen convergentie?
+
+\section{vraag8}
+!!! Nog oplossen !!!
+
+
+Kan je aan de hand van deze nulregels een verklaring geven van de fout bij de trapeziumregel?
+
 \end{document}
