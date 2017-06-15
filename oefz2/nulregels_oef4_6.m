@@ -7,10 +7,10 @@ number_of_points=31;
 N1 = zeros(15,1);
 N2 = N1;N3 = N1;N4 = N1;
 for i = 1:15
-    e_f1(i) = nullrule(-1, 1, number_of_points, f1,i*2-1);
-    e_f2(i) = nullrule(-1, 1, number_of_points, f2,i*2-1);
-    e_f3(i) = nullrule(-1, 1, number_of_points, f3,i*2-1);
-    e_f4(i) = nullrule(-1, 1, number_of_points, f4,i*2-1);
+    e_f1(i) = nullrule(-1, 1, number_of_points, f1,i*2);
+    e_f2(i) = nullrule(-1, 1, number_of_points, f2,i*2);
+    e_f3(i) = nullrule(-1, 1, number_of_points, f3,i*2);
+    e_f4(i) = nullrule(-1, 1, number_of_points, f4,i*2);
 end
 
 % using the definition from the paper, is this an typo on the assignment?
